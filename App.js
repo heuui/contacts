@@ -6,7 +6,6 @@ export default function App() {
 
   const [contact, setContact] = useState({});
 
-
   const getContacts = async () => {
     const { status } = await Contacts.requestPermissionsAsync();
     if (status === 'granted') {
@@ -18,7 +17,6 @@ export default function App() {
       }
     }
   }
-
 
   return (
     <SafeAreaView style={styles.container}>
